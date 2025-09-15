@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Zone_1</class>
+ <widget class="QWidget" name="Zone_1">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ПОДГОТОВКА</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="system">
+    <normaloff>.</normaloff>.</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget,#Zone_1
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(73, 73, 73, 255), stop:1 rgba(133, 133, 133, 255));
+}
+QAbstractButton:flat
+{
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+QAbstractButton:flat:pressed
+{
+	background-color: green;
+}
+QAbstractButton:flat[style=&quot;open&quot;]
+{
+	image: url(:/concrete/stop.png);
+}
+QAbstractButton:flat:pressed[style=&quot;open&quot;]
+{
+	image: url(:/concrete/down.png);
+}
+QAbstractButton:flat:checked[style=&quot;open&quot;]
+{
+	image: url(:/concrete/down.png);
+}
+QLabel[style=&quot;huge&quot;]
+{
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+}
+QLabel[style=&quot;gigantic&quot;]
+{
+	font-size: 32pt;
+	font-weight: bold;
+	color: white;
+}
+
+QLabel[style=&quot;badge&quot;]
+{
+	border: 1px solid red;
+	background-color: rgba(0,0,0,100);
+	color: white;
+	border-radius: 4px;
+}
+QLabel[style=&quot;vodoley-status&quot;]
+{
+	border: none;
+	background-color: rgb(98, 160, 234);
+	color: white;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 9pt;
+	padding: 8px;
+}
+QLabel[style='hint']
+{
+	color: lightGray;
+	font-weight: bold;
+	font-size: 10pt;
+}
+QLabel[style='tips']
+{
+	color: lightGray;
+	font-size: 7pt;
+}
+QLabel[style='sys']
+{
+	color: yellow;
+	font-size: 7pt;
+}
+QGroupBox[style=&quot;vodoley&quot;]
+{
+	background-color: rgb(94, 92, 100);
+	border: 1px solid gray;
+}
+QAbstractButton:flat[style=&quot;danger&quot;]
+{
+	background-color: rgba(224, 27, 36,80);
+	color: lightGray;
+}
+QAbstractButton:flat::checked[style=&quot;danger&quot;]
+{
+	background-color: rgba(224, 27, 36,255);
+	color: white;
+}
+QAbstractButton:flat[style=&quot;warning&quot;]
+{
+	background-color: rgba(46, 194, 126,80);
+	color: lightGray;
+}
+QAbstractButton:flat::checked[style=&quot;warning&quot;]
+{
+	background-color: rgb(46, 194, 126);
+	color: white;
+}
+</string>
+  </property>
+  <widget class="Animation" name="fq_1">
+   <property name="geometry">
+    <rect>
+     <x>-30</x>
+     <y>40</y>
+     <width>348</width>
+     <height>203</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/iconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>40</y>
+     <width>138</width>
+     <height>125</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/дробилка.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="fq_3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>180</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m_4">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>290</y>
+     <width>112</width>
+     <height>103</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/валковая.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="fq_5">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>420</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="m_6">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>690</y>
+     <width>123</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/сито.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="fq_7">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>800</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/rconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="Animation" name="fq_10">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>620</y>
+     <width>348</width>
+     <height>203</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/iconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fq_12">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>1640</x>
+     <y>40</y>
+     <width>268</width>
+     <height>374</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/exhaust.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="fq_8">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>530</y>
+     <width>352</width>
+     <height>208</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/irconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="Animation" name="container_9">
+   <property name="geometry">
+    <rect>
+     <x>253</x>
+     <y>639</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/valve.mng</string>
+    </url>
+   </property>
+   <property name="playbackHints">
+    <set>Animation::Bounce</set>
+   </property>
+  </widget>
+  <widget class="Animation" name="m_19">
+   <property name="geometry">
+    <rect>
+     <x>1340</x>
+     <y>330</y>
+     <width>106</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/auger.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>200</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>440</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_6">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>820</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/left.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_7">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>595</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_5">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>1864</x>
+     <y>741</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="drum_11">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>750</y>
+     <width>531</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>file:///home/vlinnik/Documents/PYSCA/TREPEL-250817/resources/drum0.7.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="gearfq_1">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М1 (ЗАГРУЗКА)</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>10</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М2 (ИЗМЕЛЬЧ)</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="gearfq_3">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>250</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>M3</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_3">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>250</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М4 (ДРОБИЛКА)</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_4">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>495</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М5</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_5">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>495</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М6 (ГРОХОТ)</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_6">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>750</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М7 (НА ФАСОВКУ)</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_7">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>750</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М8 (6)</string>
+   </property>
+  </widget>
+  <widget class="Animation" name="fq_9">
+   <property name="geometry">
+    <rect>
+     <x>-70</x>
+     <y>730</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/rconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_8">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>750</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М9</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_9">
+   <property name="geometry">
+    <rect>
+     <x>1180</x>
+     <y>495</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М10</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_10">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>251</x>
+     <y>681</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_11">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>90</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_12">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>843</x>
+     <y>554</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_13">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>560</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_14">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>320</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_15">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>820</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/left.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_16">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>732</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/left.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_10">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>260</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М19(СБРОС)</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_11">
+   <property name="geometry">
+    <rect>
+     <x>1690</x>
+     <y>260</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М12(ДЫМОСОС)</string>
+   </property>
+  </widget>
+  <widget class="GearFQ" name="motor_12">
+   <property name="geometry">
+    <rect>
+     <x>1460</x>
+     <y>497</y>
+     <width>212</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>М11(БАРАБАН)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrow_17">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>1403</x>
+     <y>555</y>
+     <width>48</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>fq_9</zorder>
+  <zorder>drum_11</zorder>
+  <zorder>m_4</zorder>
+  <zorder>m_6</zorder>
+  <zorder>fq_1</zorder>
+  <zorder>m_2</zorder>
+  <zorder>fq_3</zorder>
+  <zorder>fq_5</zorder>
+  <zorder>fq_7</zorder>
+  <zorder>fq_10</zorder>
+  <zorder>fq_12</zorder>
+  <zorder>fq_8</zorder>
+  <zorder>container_9</zorder>
+  <zorder>m_19</zorder>
+  <zorder>arrow_1</zorder>
+  <zorder>arrow_2</zorder>
+  <zorder>arrow_6</zorder>
+  <zorder>arrow_7</zorder>
+  <zorder>arrow_5</zorder>
+  <zorder>gearfq_1</zorder>
+  <zorder>motor_2</zorder>
+  <zorder>gearfq_3</zorder>
+  <zorder>motor_3</zorder>
+  <zorder>motor_4</zorder>
+  <zorder>motor_5</zorder>
+  <zorder>motor_7</zorder>
+  <zorder>motor_8</zorder>
+  <zorder>motor_9</zorder>
+  <zorder>motor_6</zorder>
+  <zorder>arrow_10</zorder>
+  <zorder>arrow_11</zorder>
+  <zorder>arrow_12</zorder>
+  <zorder>arrow_13</zorder>
+  <zorder>arrow_14</zorder>
+  <zorder>arrow_15</zorder>
+  <zorder>arrow_16</zorder>
+  <zorder>motor_10</zorder>
+  <zorder>motor_11</zorder>
+  <zorder>motor_12</zorder>
+  <zorder>arrow_17</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GearFQ</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+  </customwidget>
+  <customwidget>
+   <class>Animation</class>
+   <extends>QLabel</extends>
+   <header>pygui.animation</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

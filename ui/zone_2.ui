@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Zone_2</class>
+ <widget class="QWidget" name="Zone_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ПРОДУКТ</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget,#Zone_2
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(73, 73, 73, 255), stop:1 rgba(133, 133, 133, 255));
+}
+QAbstractButton:flat
+{
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+QAbstractButton:flat:pressed
+{
+	background-color: green;
+}
+QAbstractButton:flat[style=&quot;open&quot;]
+{
+	image: url(:/concrete/stop.png);
+}
+QAbstractButton:flat:pressed[style=&quot;open&quot;]
+{
+	image: url(:/concrete/down.png);
+}
+QAbstractButton:flat:checked[style=&quot;open&quot;]
+{
+	image: url(:/concrete/down.png);
+}
+QLabel[style=&quot;huge&quot;]
+{
+	font-size: 20pt;
+	font-weight: bold;
+	color: white;
+}
+QLabel[style=&quot;gigantic&quot;]
+{
+	font-size: 32pt;
+	font-weight: bold;
+	color: white;
+}
+
+QLabel[style=&quot;badge&quot;]
+{
+	border: 1px solid red;
+	background-color: rgba(0,0,0,100);
+	color: white;
+	border-radius: 4px;
+}
+QLabel[style=&quot;vodoley-status&quot;]
+{
+	border: none;
+	background-color: rgb(98, 160, 234);
+	color: white;
+	border-radius: 4px;
+	font-weight: bold;
+	font-size: 9pt;
+	padding: 8px;
+}
+QLabel[style='hint']
+{
+	color: lightGray;
+	font-weight: bold;
+	font-size: 10pt;
+}
+QLabel[style='tips']
+{
+	color: lightGray;
+	font-size: 7pt;
+}
+QLabel[style='sys']
+{
+	color: yellow;
+	font-size: 7pt;
+}
+QGroupBox[style=&quot;vodoley&quot;]
+{
+	background-color: rgb(94, 92, 100);
+	border: 1px solid gray;
+}
+QAbstractButton:flat[style=&quot;danger&quot;]
+{
+	background-color: rgba(224, 27, 36,80);
+	color: lightGray;
+}
+QAbstractButton:flat::checked[style=&quot;danger&quot;]
+{
+	background-color: rgba(224, 27, 36,255);
+	color: white;
+}
+QAbstractButton:flat[style=&quot;warning&quot;]
+{
+	background-color: rgba(46, 194, 126,80);
+	color: lightGray;
+}
+QAbstractButton:flat::checked[style=&quot;warning&quot;]
+{
+	background-color: rgb(46, 194, 126);
+	color: white;
+}
+</string>
+  </property>
+  <widget class="Animation" name="animation">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>10</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>935</x>
+     <y>110</y>
+     <width>127</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/валковая.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="animation_2">
+   <property name="geometry">
+    <rect>
+     <x>935</x>
+     <y>230</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1267</x>
+     <y>320</y>
+     <width>127</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/сито.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="animation_3">
+   <property name="geometry">
+    <rect>
+     <x>1315</x>
+     <y>440</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="Animation" name="animation_4">
+   <property name="geometry">
+    <rect>
+     <x>955</x>
+     <y>440</y>
+     <width>381</width>
+     <height>82</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/rconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="Animation" name="animation_5">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>570</y>
+     <width>352</width>
+     <height>208</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/irconveyor-2m.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="Animation" name="animation_6">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>660</y>
+     <width>113</width>
+     <height>238</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/container.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>873</x>
+     <y>550</y>
+     <width>138</width>
+     <height>132</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/зеленый.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Animation" name="animation_7">
+   <property name="geometry">
+    <rect>
+     <x>1690</x>
+     <y>700</y>
+     <width>106</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="source">
+    <url>
+     <string>qrc:/TREPEL/resources/auger.mng</string>
+    </url>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>1790</x>
+     <y>730</y>
+     <width>77</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/right.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>1610</x>
+     <y>730</y>
+     <width>77</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/left.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>1650</x>
+     <y>570</y>
+     <width>126</width>
+     <height>132</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/зеленый.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>957</x>
+     <y>60</y>
+     <width>66</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>1295</x>
+     <y>270</y>
+     <width>66</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>911</x>
+     <y>500</y>
+     <width>66</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>1678</x>
+     <y>520</y>
+     <width>66</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../resources.qrc">:/TREPEL/resources/down.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Animation</class>
+   <extends>QLabel</extends>
+   <header>pygui.animation</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
