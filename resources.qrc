@@ -1,5 +1,8 @@
 <RCC>
   <qresource prefix="/TREPEL">
+    <file>resources/grow.png</file>
+    <file>resources/separation.png</file>
+    <file>resources/flame.png</file>
     <file>resources/дробилка.png</file>
     <file>resources/drum0.7.mng</file>
     <file>resources/зеленый.png</file>

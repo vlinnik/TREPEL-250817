@@ -1,0 +1,15 @@
+{
+  "paths": {
+    "root": "src"
+  },
+  "tools": {
+    "downloader": "",
+    "miniterm": "",
+    "telnet": "",
+    "enumSerials": "",
+    "paths": "/home/vlinnik/.local/lib/python3.12/site-packages/../Scripts/"
+  },
+  "project": "TREPEL-250817",
+  "target": "/dev/ttyUSB0",
+  "is_serial": true
+}

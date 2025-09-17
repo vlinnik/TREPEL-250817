@@ -11,11 +11,11 @@ def main():
     ns = args.parse_known_args()[0]
     if ns.simulator:
         ns.device = '127.0.0.1'
-        # import subprocess
-        # logic = subprocess.Popen(["python3", "src/krax.py"])
+        import subprocess
+        logic = subprocess.Popen(["python3", "src/krax.py"])
     
-    # dev = PYPLC(ns.device)
-    # app.devices['PLC'] = dev
+    dev = PYPLC(ns.device)
+    app.devices['PLC'] = dev
     
     Zone_1 = app.window('ui/zone_1.ui')
     Zone_2 = app.window('ui/zone_2.ui')
@@ -25,15 +25,16 @@ def main():
     navbar.append(Zone_2)
     navbar.append(Zone_3)
     navbar.instance.show( )
+    navbar.instance.setWindowTitle('АСУ ПЕРЕРАБОТКИ И ФАСОВКИ ТРЕПЕЛА 250817 (c) 2025')
     # или 
     # Home.show()               
     
-    # dev.start(100)
+    dev.start(100)
     app.start( ctx = globals() )
-    # dev.stop( )
+    dev.stop( )
 
     if ns.simulator:
-        # logic.terminate( )
+        logic.terminate( )
         pass
 
 if __name__=='__main__':

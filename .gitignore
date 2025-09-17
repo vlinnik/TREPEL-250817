@@ -4,3 +4,4 @@ debhelper-build-stamp
 python3-*
 *.egg-info
 __pycache__
+upydev_.config
