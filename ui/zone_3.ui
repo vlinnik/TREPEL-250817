@@ -122,7 +122,25 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
 }
 </string>
   </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QWebEngineView" name="webEngineView">
+     <property name="url">
+      <url>
+       <string>http://localhost:3000/login</string>
+      </url>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../resources.qrc"/>
  </resources>

@@ -1,0 +1,648 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "tags"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "opentsdb",
+        "uid": "P3F9FDC87EEA6B335"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "fillOpacity": 70,
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": 60000,
+            "lineWidth": 0,
+            "spanNulls": 60000
+          },
+          "mappings": [
+            {
+              "options": {
+                "0": {
+                  "color": "red",
+                  "index": 0,
+                  "text": "OFF"
+                },
+                "1": {
+                  "color": "green",
+                  "index": 1,
+                  "text": "ON"
+                }
+              },
+              "type": "value"
+            }
+          ],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "dark-red",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.ctl{item_id=MOTOR_ON_1}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M1"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 15,
+        "x": 0,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "alignValue": "left",
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "mergeValues": true,
+        "rowHeight": 0.9,
+        "showValue": "auto",
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "aggregator": "max",
+          "datasource": {
+            "type": "opentsdb",
+            "uid": "P3F9FDC87EEA6B335"
+          },
+          "disableDownsampling": true,
+          "downsampleAggregator": "avg",
+          "downsampleFillPolicy": "none",
+          "metric": "motor.ctl",
+          "refId": "A",
+          "tags": {
+            "item_id": "*"
+          }
+        }
+      ],
+      "title": "РАБОТА",
+      "type": "state-timeline"
+    },
+    {
+      "datasource": {
+        "type": "opentsdb",
+        "uid": "P3F9FDC87EEA6B335"
+      },
+      "gridPos": {
+        "h": 23,
+        "w": 9,
+        "x": 15,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "limit": 50,
+        "navigateAfter": "10m",
+        "navigateBefore": "10m",
+        "navigateToPanel": true,
+        "onlyFromThisDashboard": false,
+        "onlyInTimeRange": false,
+        "showTags": true,
+        "showTime": true,
+        "showUser": true
+      },
+      "title": "ЖУРНАЛ",
+      "type": "annolist"
+    },
+    {
+      "datasource": {
+        "type": "opentsdb",
+        "uid": "P3F9FDC87EEA6B335"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 8,
+        "x": 0,
+        "y": 8
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "aggregator": "sum",
+          "datasource": {
+            "type": "opentsdb",
+            "uid": "P3F9FDC87EEA6B335"
+          },
+          "downsampleAggregator": "avg",
+          "downsampleFillPolicy": "none",
+          "metric": "zone_11.t",
+          "refId": "A",
+          "tags": {
+            "item_id": "*"
+          }
+        }
+      ],
+      "title": "ТЕМПЕРАТУРЫ",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "opentsdb",
+        "uid": "P3F9FDC87EEA6B335"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 7,
+        "x": 8,
+        "y": 8
+      },
+      "id": 3,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": false
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "aggregator": "sum",
+          "datasource": {
+            "type": "opentsdb",
+            "uid": "P3F9FDC87EEA6B335"
+          },
+          "downsampleAggregator": "avg",
+          "downsampleFillPolicy": "none",
+          "metric": "zone_11.humidity",
+          "refId": "A"
+        }
+      ],
+      "title": "ВЛАЖНОСТЬ",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "opentsdb",
+        "uid": "P3F9FDC87EEA6B335"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": 60000,
+            "lineInterpolation": "smooth",
+            "lineWidth": 3,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_1_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M1"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_3_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M3"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_12_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M12"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_10_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M10"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_8_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M8"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_7_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M7"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_5_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M5"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_20_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M20"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_19_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M19"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_18_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M18"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_16_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M16"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_14_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M14"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_25_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M25"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_24_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M24"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "motor.fq{item_id=MOTOR_22_FQ}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "M22"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 15,
+        "x": 0,
+        "y": 17
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "aggregator": "sum",
+          "datasource": {
+            "type": "opentsdb",
+            "uid": "P3F9FDC87EEA6B335"
+          },
+          "downsampleAggregator": "avg",
+          "downsampleFillPolicy": "none",
+          "metric": "motor.fq",
+          "refId": "A",
+          "tags": {
+            "item_id": "*"
+          }
+        }
+      ],
+      "title": "ЧП",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 38,
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "OVERVIEW",
+  "uid": "f4d47ce2-b2f3-405d-8d96-6d7cd97ec646",
+  "version": 8,
+  "weekStart": ""
+}

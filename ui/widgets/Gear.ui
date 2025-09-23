@@ -175,6 +175,43 @@ QLabel
          </property>
          <item alignment="Qt::AlignVCenter">
           <widget class="QWidget" name="startPlace" native="true">
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Highlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>249</red>
+                 <green>240</green>
+                 <blue>107</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Highlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>249</red>
+                 <green>240</green>
+                 <blue>107</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Highlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>145</red>
+                 <green>145</green>
+                 <blue>145</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
            <layout class="QVBoxLayout" name="verticalLayout">
             <property name="leftMargin">
              <number>0</number>
@@ -235,6 +272,43 @@ QLabel
          </item>
          <item alignment="Qt::AlignVCenter">
           <widget class="QWidget" name="stopPlace" native="true">
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Highlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>249</red>
+                 <green>240</green>
+                 <blue>107</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Highlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>249</red>
+                 <green>240</green>
+                 <blue>107</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Highlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>145</red>
+                 <green>145</green>
+                 <blue>145</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
             <property name="leftMargin">
              <number>0</number>
@@ -391,8 +465,8 @@ QLabel
          <string/>
         </property>
         <property name="icon">
-         <iconset theme="system-settings">
-          <normaloff>../../</normaloff>../../</iconset>
+         <iconset resource="../../resources.qrc">
+          <normaloff>:/TREPEL/resources/tune.png</normaloff>:/TREPEL/resources/tune.png</iconset>
         </property>
         <property name="iconSize">
          <size>

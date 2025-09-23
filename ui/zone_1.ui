@@ -16,6 +16,196 @@
     <height>950</height>
    </size>
   </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Button">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Button">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Button">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="LinearGradientPattern">
+       <gradient startx="0.000000000000000" starty="0.000000000000000" endx="1.000000000000000" endy="1.000000000000000" type="LinearGradient" spread="PadSpread" coordinatemode="ObjectBoundingMode">
+        <gradientstop position="0.000000000000000">
+         <color alpha="255">
+          <red>73</red>
+          <green>73</green>
+          <blue>73</blue>
+         </color>
+        </gradientstop>
+        <gradientstop position="1.000000000000000">
+         <color alpha="255">
+          <red>133</red>
+          <green>133</green>
+          <blue>133</blue>
+         </color>
+        </gradientstop>
+       </gradient>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
   <property name="windowTitle">
    <string>СУШКА</string>
   </property>
@@ -232,8 +422,8 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <rect>
      <x>610</x>
      <y>800</y>
-     <width>381</width>
-     <height>82</height>
+     <width>374</width>
+     <height>90</height>
     </rect>
    </property>
    <property name="source">
@@ -312,7 +502,7 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     </url>
    </property>
    <property name="playbackHints">
-    <set>Animation::Bounce</set>
+    <enum>Animation::Bounce</enum>
    </property>
   </widget>
   <widget class="Animation" name="machine_19">
@@ -458,6 +648,9 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="title">
     <string>M3</string>
    </property>
+   <property name="idx" stdset="0">
+    <number>3</number>
+   </property>
   </widget>
   <widget class="GearFQ" name="gear_5">
    <property name="geometry">
@@ -470,6 +663,9 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    </property>
    <property name="title">
     <string>М5</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>5</number>
    </property>
   </widget>
   <widget class="GearFQ" name="gear_7">
@@ -484,6 +680,9 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="title">
     <string>М7 (НА ФАСОВКУ)</string>
    </property>
+   <property name="idx" stdset="0">
+    <number>7</number>
+   </property>
   </widget>
   <widget class="GearFQ" name="gear_8">
    <property name="geometry">
@@ -497,33 +696,23 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="title">
     <string>М8 (6)</string>
    </property>
+   <property name="idx" stdset="0">
+    <number>8</number>
+   </property>
   </widget>
   <widget class="Animation" name="machine_9">
    <property name="geometry">
     <rect>
      <x>-70</x>
      <y>730</y>
-     <width>381</width>
-     <height>82</height>
+     <width>374</width>
+     <height>90</height>
     </rect>
    </property>
    <property name="source">
     <url>
      <string>qrc:/TREPEL/resources/rconveyor-2m.mng</string>
     </url>
-   </property>
-  </widget>
-  <widget class="GearFQ" name="gear_9">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>750</y>
-     <width>212</width>
-     <height>187</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>М9</string>
    </property>
   </widget>
   <widget class="GearFQ" name="gear_10">
@@ -537,6 +726,9 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    </property>
    <property name="title">
     <string>М10</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>10</number>
    </property>
   </widget>
   <widget class="QLabel" name="arrow_10">
@@ -649,28 +841,6 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="arrow_15">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>820</y>
-     <width>48</width>
-     <height>48</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap resource="../resources.qrc">:/TREPEL/resources/left.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="QLabel" name="arrow_16">
    <property name="enabled">
     <bool>true</bool>
@@ -691,35 +861,6 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    </property>
    <property name="scaledContents">
     <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="GearFQ" name="gear_19">
-   <property name="geometry">
-    <rect>
-     <x>1440</x>
-     <y>10</y>
-     <width>212</width>
-     <height>187</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>М19(СБРОС)</string>
-   </property>
-   <property name="flat">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="GearFQ" name="gear_12">
-   <property name="geometry">
-    <rect>
-     <x>1700</x>
-     <y>10</y>
-     <width>212</width>
-     <height>187</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>М12(ДЫМОСОС)</string>
    </property>
   </widget>
   <widget class="QLabel" name="arrow_17">
@@ -835,6 +976,9 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="flat">
     <bool>false</bool>
    </property>
+   <property name="idx" stdset="0">
+    <number>11</number>
+   </property>
   </widget>
   <widget class="Gear" name="gear_26">
    <property name="geometry">
@@ -896,6 +1040,68 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <string>sys</string>
    </property>
   </widget>
+  <widget class="Exhauser" name="gear_12">
+   <property name="geometry">
+    <rect>
+     <x>1700</x>
+     <y>10</y>
+     <width>200</width>
+     <height>235</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Дымосос (12)</string>
+   </property>
+  </widget>
+  <widget class="Auger" name="auger">
+   <property name="geometry">
+    <rect>
+     <x>1440</x>
+     <y>11</y>
+     <width>200</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ШНЕК (13)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>13</number>
+   </property>
+  </widget>
+  <widget class="RuntimeTrend" name="runtimetrend">
+   <property name="geometry">
+    <rect>
+     <x>821</x>
+     <y>15</y>
+     <width>598</width>
+     <height>212</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#runtimetrend
+{
+	padding-right: 5px;
+}
+#runtimetrend&gt;QWidget
+{
+	color: silver;
+	font-size: 8pt;
+}</string>
+   </property>
+   <property name="depth">
+    <number>600</number>
+   </property>
+   <property name="canvasBackground">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>61</red>
+      <green>56</green>
+      <blue>70</blue>
+     </color>
+    </brush>
+   </property>
+  </widget>
   <zorder>machine_10</zorder>
   <zorder>machine_9</zorder>
   <zorder>machine_11</zorder>
@@ -918,7 +1124,6 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
   <zorder>gear_3</zorder>
   <zorder>gear_5</zorder>
   <zorder>gear_8</zorder>
-  <zorder>gear_9</zorder>
   <zorder>gear_10</zorder>
   <zorder>gear_7</zorder>
   <zorder>arrow_10</zorder>
@@ -926,10 +1131,7 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
   <zorder>arrow_12</zorder>
   <zorder>arrow_13</zorder>
   <zorder>arrow_14</zorder>
-  <zorder>arrow_15</zorder>
   <zorder>arrow_16</zorder>
-  <zorder>gear_19</zorder>
-  <zorder>gear_12</zorder>
   <zorder>arrow_17</zorder>
   <zorder>arrow_18</zorder>
   <zorder>gear_2</zorder>
@@ -939,10 +1141,23 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
   <zorder>gear_26</zorder>
   <zorder>scanTime</zorder>
   <zorder>powered</zorder>
+  <zorder>gear_12</zorder>
+  <zorder>auger</zorder>
+  <zorder>runtimetrend</zorder>
  </widget>
  <customwidgets>
   <customwidget>
+   <class>Exhauser</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+  </customwidget>
+  <customwidget>
    <class>Gear</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+  </customwidget>
+  <customwidget>
+   <class>Auger</class>
    <extends>QGroupBox</extends>
    <header>customplugin</header>
   </customwidget>
@@ -957,9 +1172,18 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <header>pygui.animation</header>
    <container>1</container>
   </customwidget>
+  <customwidget>
+   <class>RuntimeTrend</class>
+   <extends>QwtPlot</extends>
+   <header>pygui.runtimetrend</header>
+  </customwidget>
+  <customwidget>
+   <class>QwtPlot</class>
+   <extends>QFrame</extends>
+   <header>qwt_plot.h</header>
+  </customwidget>
  </customwidgets>
  <resources>
-  <include location="../resources.qrc"/>
   <include location="../resources.qrc"/>
  </resources>
  <connections/>

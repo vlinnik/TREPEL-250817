@@ -9,7 +9,7 @@
 
 ## Зависимости
 
-AnyQt, PyQt5, pyplc, pysca, pygui
+qtpy, PyQt5, pyplc, pysca, pygui
 
 # Установка
 
@@ -35,7 +35,7 @@ python3 <SOURCE_DIR_LOCATION>/__main__.py -w <SOURCE_DIR_LOCATION>
 ```
 $ pyi-makespec  --windowed --icon=resources/power.png --name=pysca-hmi --exclude PyQt6 --exclude PySide2 __main__.py
         --hidden-import=qwt
-        --hidden-import=AnyQt.QtSql
+        --hidden-import=qtpy.QtSql
         --hidden-import=pygui.animation
         --hidden-import=pygui.runtimetrend
 ```
@@ -45,7 +45,7 @@ $ pyi-makespec  --windowed --icon=resources/power.png --name=pysca-hmi --exclude
 
 ```
 import os
-from AnyQt.QtCore import QLibraryInfo
+from qtpy.QtCore import QLibraryInfo
 
 datas = [ ('default.scada','.'),('ui','./ui'),('resources','./resources'),('SCADA.rcc','.'),('concrete6.dat','.') ]
 binaries = [

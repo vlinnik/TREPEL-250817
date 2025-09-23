@@ -15,8 +15,8 @@ class Gear(SFC):
     off = POU.var(False)
     lock = POU.var(False)
     startup_t = POU.var(int(5),persistent=True)
-    test = POU.var(False)       #тест нештатной ситуации
-    rsn  = POU.var(int(0))      #выбор нештатной ситуации
+    test = POU.var(False,hidden=True)       #тест нештатной ситуации
+    rsn  = POU.var(int(0),hidden=True)      #выбор нештатной ситуации
     manual=POU.var(True,persistent=True) #ручной режим (не учитывать depends)
     
     fault = POU.input(False, hidden = True)
@@ -88,11 +88,11 @@ class Gear(SFC):
         self._turnon( )
         self.log('разгоняемся')
         T = 0 
-        while T<self.startup_t and self._allowed():
+        while T<5 and self._allowed():
             yield from self.pause(1000)
             T+=1
             self.rdy = not self.rdy
-        if T<self.startup_t or self.fault:
+        if T<5 or self.fault:
             self.rdy = False
             if self.q and self.fault:
                 self.log('аварийный останов при пуске')
@@ -191,10 +191,10 @@ class GearChain(SFC):
             
     def _start(self):
         self.state = GearChain.STARTING
-        for gear in self.gears:
+        for gear in reversed(self.gears):
             if gear.state == Gear.RUN:
                 continue
-            self.msg=f'ПУСК {gear.id}'
+            self.msg=f'ОТМЕНА'
             if gear.lock:
                 gear.off = True
                 yield
@@ -202,9 +202,9 @@ class GearChain(SFC):
             gear.on = True
             yield
             gear.on = False
-            yield from self.till(lambda: gear.state != Gear.RUN and self.state == GearChain.STARTING, max=5000, step=f'ожидаем запуска {gear.id}')
+            yield from self.till(lambda: gear.state != Gear.RUN and self.state == GearChain.STARTING, max=6000, step=f'ожидаем запуска {gear.id}')
             if gear.state!= Gear.RUN:
-                self.msg=f'ПРОВЕРЬ {gear.id}'
+                self.msg=f'СТОП'
                 self.log(f'неудачная попытка запуска {gear.id}')
                 return
             if self.state != GearChain.STARTING:
@@ -212,29 +212,31 @@ class GearChain(SFC):
             yield from self.pause(2000)
         if self.state==GearChain.STARTING: 
             self.state = GearChain.IDLE
-            self.msg = 'ГОТОВ'
+            self.msg = 'СТОП'
     
     def _stop(self):
         self.state = GearChain.STOPPING
-        for gear in reversed(self.gears):
+        for gear in self.gears:
             if gear.state == Gear.IDLE:
                 continue
-            self.msg=f'РАЗГРУЗКА {gear.id}'
-            yield from self.till(lambda: gear.state == Gear.RUN and self.state==GearChain.STOPPING, max = gear.startup_t*1000, step = f'штатный останов {gear.id}')
+            T = gear.startup_t
+            while gear.state == Gear.RUN and self.state==GearChain.STOPPING and T>0:
+                yield from self.till(lambda: gear.state == Gear.RUN and self.state==GearChain.STOPPING, max = 1000, step = f'штатный останов {gear.id}')
+                T-=1
+                self.msg=f'СТОП({T})'            
             gear.off = True
             yield
             gear.off = False
-            self.msg=f'ОСТАНОВ {gear.id}'
             yield from self.till(lambda: gear.state != Gear.IDLE and self.state==GearChain.STOPPING, step=f'ожидаем остановки {gear.id}',max = 2000)
             if gear.state != Gear.IDLE:
-                self.msg=f'ПРОВЕРЬ {gear.id}'
+                self.msg=f'СТОП'
                 self.log(f'неудачная попытка остановки {gear.id}')
                 return
             if self.state != GearChain.STOPPING:break
             yield from self.pause(2000)
         if self.state==GearChain.STOPPING: 
             self.state = GearChain.IDLE
-            self.msg = 'ГОТОВ'
+            self.msg = 'СТОП'
 
     def main(self):
         yield from self.until(lambda: self._t_on.q or self._t_off.q, step='ожидаем пуск/стоп')
@@ -251,7 +253,3 @@ class GearChain(SFC):
                 self.exec(self._stop() )
             else:
                 self.state=GearChain.IDLE
-        
-        
-    
-    

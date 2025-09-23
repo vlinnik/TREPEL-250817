@@ -114,13 +114,36 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
 	background-color: rgb(46, 194, 126);
 	color: white;
 }
+QLabel[style=&quot;checkpoint&quot;]
+{
+	border: 2px solid darkGray;
+	background-color: gray;
+	font-size: 15pt;
+	border-radius: 21px;
+	padding: 8px;
+	color: silver;
+}
+QLabel:enabled[style=&quot;checkpoint&quot;]
+{
+	border-color: darkGreen;
+	background-color: green;
+	color: white;
+}
+QWidget[style=&quot;connector&quot;]
+{
+	color: darkGray;
+}
+QWidget:enabled[style=&quot;connector&quot;]
+{
+	color: green;
+}
 </string>
   </property>
-  <widget class="Animation" name="animation">
+  <widget class="Animation" name="machine_14">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>10</y>
+     <y>214</y>
      <width>381</width>
      <height>82</height>
     </rect>
@@ -131,11 +154,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     </url>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="machine_15">
    <property name="geometry">
     <rect>
      <x>611</x>
-     <y>66</y>
+     <y>270</y>
      <width>127</width>
      <height>118</height>
     </rect>
@@ -150,11 +173,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="Animation" name="animation_2">
+  <widget class="Animation" name="machine_16">
    <property name="geometry">
     <rect>
      <x>490</x>
-     <y>195</y>
+     <y>399</y>
      <width>381</width>
      <height>82</height>
     </rect>
@@ -165,11 +188,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     </url>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="machine_17">
    <property name="geometry">
     <rect>
      <x>880</x>
-     <y>300</y>
+     <y>504</y>
      <width>127</width>
      <height>118</height>
     </rect>
@@ -184,11 +207,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="Animation" name="animation_3">
+  <widget class="Animation" name="machine_19">
    <property name="geometry">
     <rect>
      <x>950</x>
-     <y>450</y>
+     <y>654</y>
      <width>381</width>
      <height>82</height>
     </rect>
@@ -199,13 +222,13 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     </url>
    </property>
   </widget>
-  <widget class="Animation" name="animation_4">
+  <widget class="Animation" name="machine_18">
    <property name="geometry">
     <rect>
      <x>550</x>
-     <y>450</y>
-     <width>381</width>
-     <height>82</height>
+     <y>654</y>
+     <width>374</width>
+     <height>90</height>
     </rect>
    </property>
    <property name="source">
@@ -214,11 +237,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     </url>
    </property>
   </widget>
-  <widget class="Animation" name="animation_5">
+  <widget class="Animation" name="machine_20">
    <property name="geometry">
     <rect>
      <x>250</x>
-     <y>470</y>
+     <y>674</y>
      <width>352</width>
      <height>208</height>
     </rect>
@@ -229,11 +252,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     </url>
    </property>
   </widget>
-  <widget class="Animation" name="animation_6">
+  <widget class="Animation" name="valve_2">
    <property name="geometry">
     <rect>
      <x>262</x>
-     <y>616</y>
+     <y>820</y>
      <width>42</width>
      <height>42</height>
     </rect>
@@ -244,11 +267,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     </url>
    </property>
   </widget>
-  <widget class="Animation" name="animation_7">
+  <widget class="Animation" name="machine_22">
    <property name="geometry">
     <rect>
      <x>1263</x>
-     <y>640</y>
+     <y>844</y>
      <width>106</width>
      <height>50</height>
     </rect>
@@ -263,7 +286,7 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="geometry">
     <rect>
      <x>326</x>
-     <y>78</y>
+     <y>282</y>
      <width>48</width>
      <height>48</height>
     </rect>
@@ -288,7 +311,7 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="geometry">
     <rect>
      <x>448</x>
-     <y>210</y>
+     <y>414</y>
      <width>48</width>
      <height>48</height>
     </rect>
@@ -313,7 +336,7 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>570</y>
+     <y>774</y>
      <width>48</width>
      <height>48</height>
     </rect>
@@ -338,7 +361,7 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="geometry">
     <rect>
      <x>260</x>
-     <y>658</y>
+     <y>862</y>
      <width>48</width>
      <height>48</height>
     </rect>
@@ -363,7 +386,7 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="geometry">
     <rect>
      <x>1450</x>
-     <y>713</y>
+     <y>904</y>
      <width>48</width>
      <height>48</height>
     </rect>
@@ -384,63 +407,43 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="GearFQ" name="gearfq_2">
+  <widget class="GearFQ" name="gear_14">
    <property name="geometry">
     <rect>
      <x>119</x>
-     <y>10</y>
+     <y>214</y>
      <width>200</width>
      <height>193</height>
     </rect>
    </property>
    <property name="title">
-    <string>КЛ-8000 (13)</string>
+    <string>КЛ-8000 (14)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>14</number>
    </property>
   </widget>
-  <widget class="GearFQ" name="gearfq_3">
-   <property name="geometry">
-    <rect>
-     <x>378</x>
-     <y>10</y>
-     <width>200</width>
-     <height>193</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>ДРОБИЛКА (14)</string>
-   </property>
-  </widget>
-  <widget class="GearFQ" name="gearfq_4">
+  <widget class="GearFQ" name="gear_16">
    <property name="geometry">
     <rect>
      <x>375</x>
-     <y>260</y>
+     <y>464</y>
      <width>200</width>
      <height>193</height>
     </rect>
    </property>
    <property name="title">
-    <string>КЛ-8000 (15)</string>
+    <string>КЛ-8000 (16)</string>
    </property>
-  </widget>
-  <widget class="GearFQ" name="gearfq_5">
-   <property name="geometry">
-    <rect>
-     <x>660</x>
-     <y>260</y>
-     <width>200</width>
-     <height>193</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>ГРОХОТ (16)</string>
+   <property name="idx" stdset="0">
+    <number>16</number>
    </property>
   </widget>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>598</x>
-     <y>327</y>
+     <x>600</x>
+     <y>531</y>
      <width>48</width>
      <height>48</height>
     </rect>
@@ -461,65 +464,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="GearFQ" name="gearfq_6">
+  <widget class="GearFQ" name="gear_18">
    <property name="geometry">
     <rect>
      <x>660</x>
-     <y>514</y>
-     <width>200</width>
-     <height>193</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>КЛ-6000 (17)</string>
-   </property>
-  </widget>
-  <widget class="GearFQ" name="gearfq_7">
-   <property name="geometry">
-    <rect>
-     <x>370</x>
-     <y>508</y>
-     <width>200</width>
-     <height>193</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>КЛ-10000 (19)</string>
-   </property>
-  </widget>
-  <widget class="Animation" name="animation_9">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>810</y>
-     <width>381</width>
-     <height>82</height>
-    </rect>
-   </property>
-   <property name="source">
-    <url>
-     <string>qrc:/TREPEL/resources/rconveyor-2m.mng</string>
-    </url>
-   </property>
-  </widget>
-  <widget class="GearFQ" name="gearfq_8">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>740</y>
-     <width>200</width>
-     <height>193</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>ВЫХОД 3-8мм (20)</string>
-   </property>
-  </widget>
-  <widget class="GearFQ" name="gearfq_9">
-   <property name="geometry">
-    <rect>
-     <x>1050</x>
-     <y>514</y>
+     <y>718</y>
      <width>200</width>
      <height>193</height>
     </rect>
@@ -527,53 +476,47 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="title">
     <string>КЛ-6000 (18)</string>
    </property>
+   <property name="idx" stdset="0">
+    <number>18</number>
+   </property>
   </widget>
-  <widget class="GearFQ" name="gearfq_10">
+  <widget class="GearFQ" name="gear_20">
    <property name="geometry">
     <rect>
-     <x>1383</x>
-     <y>520</y>
+     <x>370</x>
+     <y>712</y>
      <width>200</width>
      <height>193</height>
     </rect>
    </property>
    <property name="title">
-    <string>КВ (21)</string>
+    <string>КЛ-10000 (20)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>20</number>
    </property>
   </widget>
-  <widget class="GearFQ" name="gearfq_11">
+  <widget class="GearFQ" name="gear_19">
    <property name="geometry">
     <rect>
-     <x>1383</x>
-     <y>760</y>
+     <x>1050</x>
+     <y>718</y>
      <width>200</width>
      <height>193</height>
     </rect>
    </property>
    <property name="title">
-    <string>ВЫХОД (22)</string>
+    <string>КЛ-6000 (19)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>19</number>
    </property>
   </widget>
-  <widget class="Animation" name="animation_10">
-   <property name="geometry">
-    <rect>
-     <x>1290</x>
-     <y>810</y>
-     <width>381</width>
-     <height>82</height>
-    </rect>
-   </property>
-   <property name="source">
-    <url>
-     <string>qrc:/TREPEL/resources/conveyor-2m.mng</string>
-    </url>
-   </property>
-  </widget>
-  <widget class="Animation" name="animation_11">
+  <widget class="Animation" name="machine_24">
    <property name="geometry">
     <rect>
      <x>1600</x>
-     <y>360</y>
+     <y>564</y>
      <width>106</width>
      <height>50</height>
     </rect>
@@ -584,11 +527,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     </url>
    </property>
   </widget>
-  <widget class="Animation" name="animation_12">
+  <widget class="Animation" name="machine_25">
    <property name="geometry">
     <rect>
-     <x>1680</x>
-     <y>10</y>
+     <x>1690</x>
+     <y>214</y>
      <width>164</width>
      <height>608</height>
     </rect>
@@ -603,7 +546,7 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
    <property name="geometry">
     <rect>
      <x>1296</x>
-     <y>580</y>
+     <y>784</y>
      <width>48</width>
      <height>48</height>
     </rect>
@@ -624,37 +567,11 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="GearFQ" name="gearfq_12">
-   <property name="geometry">
-    <rect>
-     <x>1380</x>
-     <y>280</y>
-     <width>200</width>
-     <height>193</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>КВ (23)</string>
-   </property>
-  </widget>
-  <widget class="GearFQ" name="gearfq_13">
-   <property name="geometry">
-    <rect>
-     <x>1380</x>
-     <y>10</y>
-     <width>200</width>
-     <height>193</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>НОРИЯ (24)</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
      <x>590</x>
-     <y>579</y>
+     <y>783</y>
      <width>48</width>
      <height>48</height>
     </rect>
@@ -675,41 +592,1216 @@ QAbstractButton:flat::checked[style=&quot;warning&quot;]
     <bool>true</bool>
    </property>
   </widget>
-  <zorder>animation_10</zorder>
-  <zorder>animation</zorder>
-  <zorder>label</zorder>
-  <zorder>animation_2</zorder>
-  <zorder>label_2</zorder>
-  <zorder>animation_3</zorder>
-  <zorder>animation_4</zorder>
-  <zorder>animation_5</zorder>
-  <zorder>animation_6</zorder>
-  <zorder>animation_7</zorder>
+  <widget class="Gear" name="gear_15">
+   <property name="geometry">
+    <rect>
+     <x>384</x>
+     <y>214</y>
+     <width>200</width>
+     <height>197</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ДРОБИЛКА (15)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>15</number>
+   </property>
+  </widget>
+  <widget class="Gear" name="gear_17">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>464</y>
+     <width>200</width>
+     <height>197</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ГРОХОТ (17)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>17</number>
+   </property>
+  </widget>
+  <widget class="Auger" name="gear_24">
+   <property name="geometry">
+    <rect>
+     <x>1376</x>
+     <y>473</y>
+     <width>200</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ШНЕК (24)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="Auger" name="gear_22">
+   <property name="geometry">
+    <rect>
+     <x>1376</x>
+     <y>713</y>
+     <width>200</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ШНЕК (22)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>22</number>
+   </property>
+  </widget>
+  <widget class="Auger" name="gear_25">
+   <property name="geometry">
+    <rect>
+     <x>1375</x>
+     <y>230</y>
+     <width>200</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>НОРИЯ (25)</string>
+   </property>
+   <property name="idx" stdset="0">
+    <number>25</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_9">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>14</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_14">
+   <property name="geometry">
+    <rect>
+     <x>1410</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>24</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_8">
+   <property name="geometry">
+    <rect>
+     <x>803</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_17">
+   <property name="geometry">
+    <rect>
+     <x>564</x>
+     <y>99</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_12">
+   <property name="geometry">
+    <rect>
+     <x>1230</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_3">
+   <property name="geometry">
+    <rect>
+     <x>234</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_16">
+   <property name="geometry">
+    <rect>
+     <x>556</x>
+     <y>60</y>
+     <width>54</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_10">
+   <property name="geometry">
+    <rect>
+     <x>991</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>15</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_12">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>17</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_25">
+   <property name="geometry">
+    <rect>
+     <x>1640</x>
+     <y>30</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПУСК</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>warning</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_4">
+   <property name="geometry">
+    <rect>
+     <x>343</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_2">
+   <property name="geometry">
+    <rect>
+     <x>128</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_19">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>177</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>18</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_2">
+   <property name="geometry">
+    <rect>
+     <x>155</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_5">
+   <property name="geometry">
+    <rect>
+     <x>452</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_8">
+   <property name="geometry">
+    <rect>
+     <x>785</x>
+     <y>104</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПУСК</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>warning</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_11">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>16</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_5">
+   <property name="geometry">
+    <rect>
+     <x>479</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_22">
+   <property name="geometry">
+    <rect>
+     <x>1745</x>
+     <y>104</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>СТОП</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>danger</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_8">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>11</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_8">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>104</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>СТОП</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>danger</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_16">
+   <property name="geometry">
+    <rect>
+     <x>673</x>
+     <y>99</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_15">
+   <property name="geometry">
+    <rect>
+     <x>1520</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>25</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_13">
+   <property name="geometry">
+    <rect>
+     <x>1310</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>19</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_18">
+   <property name="geometry">
+    <rect>
+     <x>1311</x>
+     <y>104</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>22</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_19">
+   <property name="geometry">
+    <rect>
+     <x>1204</x>
+     <y>59</y>
+     <width>54</width>
+     <height>122</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_7">
+   <property name="geometry">
+    <rect>
+     <x>671</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>10</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_7">
+   <property name="geometry">
+    <rect>
+     <x>698</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_1">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_3">
+   <property name="geometry">
+    <rect>
+     <x>258</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_22">
+   <property name="geometry">
+    <rect>
+     <x>1640</x>
+     <y>105</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПУСК</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>warning</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_13">
+   <property name="geometry">
+    <rect>
+     <x>1331</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_1">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_15">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>111</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_11">
+   <property name="geometry">
+    <rect>
+     <x>1128</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start_20">
+   <property name="geometry">
+    <rect>
+     <x>1640</x>
+     <y>180</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ПУСК</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>warning</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_10">
+   <property name="geometry">
+    <rect>
+     <x>1016</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_6">
+   <property name="geometry">
+    <rect>
+     <x>586</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_20">
+   <property name="geometry">
+    <rect>
+     <x>1745</x>
+     <y>179</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>СТОП</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>danger</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_9">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_14">
+   <property name="geometry">
+    <rect>
+     <x>1440</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_4">
+   <property name="geometry">
+    <rect>
+     <x>372</x>
+     <y>37</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_18">
+   <property name="geometry">
+    <rect>
+     <x>1231</x>
+     <y>189</y>
+     <width>92</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_20">
+   <property name="geometry">
+    <rect>
+     <x>1310</x>
+     <y>177</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_17">
+   <property name="geometry">
+    <rect>
+     <x>1304</x>
+     <y>60</y>
+     <width>54</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="checkpoint_6">
+   <property name="geometry">
+    <rect>
+     <x>562</x>
+     <y>25</y>
+     <width>42</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="style" stdset="0">
+    <string>checkpoint</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_25">
+   <property name="geometry">
+    <rect>
+     <x>1745</x>
+     <y>30</y>
+     <width>88</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>СТОП</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="style" stdset="0">
+    <string>danger</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_20">
+   <property name="geometry">
+    <rect>
+     <x>712</x>
+     <y>110</y>
+     <width>72</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_21">
+   <property name="geometry">
+    <rect>
+     <x>1350</x>
+     <y>188</y>
+     <width>289</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_22">
+   <property name="geometry">
+    <rect>
+     <x>1351</x>
+     <y>114</y>
+     <width>289</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <widget class="Line" name="connector_23">
+   <property name="geometry">
+    <rect>
+     <x>1560</x>
+     <y>36</y>
+     <width>79</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>15</number>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="style" stdset="0">
+    <string>connector</string>
+   </property>
+  </widget>
+  <zorder>connector_20</zorder>
+  <zorder>connector_21</zorder>
+  <zorder>connector_22</zorder>
+  <zorder>connector_23</zorder>
+  <zorder>start_22</zorder>
+  <zorder>stop_22</zorder>
+  <zorder>stop_20</zorder>
+  <zorder>start_20</zorder>
+  <zorder>connector_17</zorder>
+  <zorder>connector_19</zorder>
+  <zorder>connector_18</zorder>
+  <zorder>machine_14</zorder>
+  <zorder>machine_15</zorder>
+  <zorder>machine_16</zorder>
+  <zorder>machine_17</zorder>
+  <zorder>machine_19</zorder>
+  <zorder>machine_18</zorder>
+  <zorder>machine_20</zorder>
+  <zorder>valve_2</zorder>
+  <zorder>machine_22</zorder>
   <zorder>label_3</zorder>
   <zorder>label_7</zorder>
   <zorder>label_9</zorder>
   <zorder>label_11</zorder>
   <zorder>label_12</zorder>
-  <zorder>gearfq_2</zorder>
-  <zorder>gearfq_3</zorder>
-  <zorder>gearfq_4</zorder>
-  <zorder>gearfq_5</zorder>
+  <zorder>gear_14</zorder>
+  <zorder>gear_16</zorder>
   <zorder>label_4</zorder>
-  <zorder>gearfq_6</zorder>
-  <zorder>gearfq_7</zorder>
-  <zorder>animation_9</zorder>
-  <zorder>gearfq_8</zorder>
-  <zorder>gearfq_9</zorder>
-  <zorder>gearfq_11</zorder>
-  <zorder>gearfq_10</zorder>
-  <zorder>animation_11</zorder>
-  <zorder>animation_12</zorder>
+  <zorder>gear_18</zorder>
+  <zorder>gear_20</zorder>
+  <zorder>gear_19</zorder>
+  <zorder>machine_24</zorder>
+  <zorder>machine_25</zorder>
   <zorder>label_5</zorder>
-  <zorder>gearfq_12</zorder>
-  <zorder>gearfq_13</zorder>
   <zorder>label_6</zorder>
+  <zorder>gear_15</zorder>
+  <zorder>gear_17</zorder>
+  <zorder>gear_24</zorder>
+  <zorder>gear_22</zorder>
+  <zorder>gear_25</zorder>
+  <zorder>connector_8</zorder>
+  <zorder>connector_12</zorder>
+  <zorder>connector_16</zorder>
+  <zorder>start_25</zorder>
+  <zorder>connector_2</zorder>
+  <zorder>start_8</zorder>
+  <zorder>connector_5</zorder>
+  <zorder>stop_8</zorder>
+  <zorder>connector_7</zorder>
+  <zorder>connector_3</zorder>
+  <zorder>connector_13</zorder>
+  <zorder>connector_1</zorder>
+  <zorder>connector_15</zorder>
+  <zorder>connector_11</zorder>
+  <zorder>connector_10</zorder>
+  <zorder>connector_6</zorder>
+  <zorder>connector_9</zorder>
+  <zorder>connector_14</zorder>
+  <zorder>connector_4</zorder>
+  <zorder>stop_25</zorder>
+  <zorder>checkpoint_1</zorder>
+  <zorder>checkpoint_9</zorder>
+  <zorder>checkpoint_2</zorder>
+  <zorder>checkpoint_6</zorder>
+  <zorder>checkpoint_5</zorder>
+  <zorder>checkpoint_7</zorder>
+  <zorder>checkpoint_12</zorder>
+  <zorder>checkpoint_14</zorder>
+  <zorder>checkpoint_8</zorder>
+  <zorder>checkpoint_15</zorder>
+  <zorder>checkpoint_11</zorder>
+  <zorder>checkpoint_3</zorder>
+  <zorder>checkpoint_13</zorder>
+  <zorder>checkpoint_4</zorder>
+  <zorder>checkpoint_10</zorder>
+  <zorder>checkpoint_20</zorder>
+  <zorder>checkpoint_19</zorder>
+  <zorder>checkpoint_18</zorder>
+  <zorder>checkpoint_16</zorder>
+  <zorder>checkpoint_17</zorder>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>Gear</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+  </customwidget>
+  <customwidget>
+   <class>Auger</class>
+   <extends>QGroupBox</extends>
+   <header>customplugin</header>
+  </customwidget>
   <customwidget>
    <class>GearFQ</class>
    <extends>QGroupBox</extends>

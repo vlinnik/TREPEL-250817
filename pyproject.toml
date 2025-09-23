@@ -22,7 +22,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent"
 ]
-dependencies=["PythonQwt","AnyQt","sqlalchemy"]
+dependencies=["PythonQwt","qtpy","sqlalchemy"]
 
 [project.optional-dependencies]
 dev = []

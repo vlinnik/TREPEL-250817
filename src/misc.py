@@ -79,3 +79,21 @@ class ControlPost(ControlStation):
     def main(self):
         if self.manual:
             super().main( )
+
+class GearAny():
+    def __init__(self,first: Gear, second: Gear) -> None:
+        self.first = first
+        self.fault = False
+        self.second= second
+        self.state = Gear.IDLE
+        
+    def __call__(self):
+        if self.first.state == Gear.RUN:
+            self.state = Gear.RUN
+            self.fault = self.first.fault
+        elif self.second.state == Gear.RUN:
+            self.state = Gear.RUN
+            self.fault = self.second.fault            
+        else:
+            self.state = Gear.IDLE
+            self.fault = False

@@ -7,3 +7,6 @@
 [submodule "umodbus.git"]
 	path = umodbus.git
 	url = https://github.com/brainelectronics/micropython-modbus.git
+[submodule "pygui.git"]
+	path = pygui.git
+	url = https://github.com/vlinnik/pygui.git
