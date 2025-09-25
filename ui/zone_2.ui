@@ -266,6 +266,9 @@ QWidget:enabled[style=&quot;connector&quot;]
      <string>qrc:/TREPEL/resources/valve.mng</string>
     </url>
    </property>
+   <property name="playbackHints">
+    <set>Animation::Bounce</set>
+   </property>
   </widget>
   <widget class="Animation" name="machine_22">
    <property name="geometry">

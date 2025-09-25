@@ -27,11 +27,17 @@ def __thread_mbus():
 
             ret = None
             if(req.func==0): # write coil
-                _master.write_single_coil(req.addr, req.reg, req.val)
+                if req.val is not None:
+                    _master.write_single_coil(req.addr, req.reg, req.val)
+                else:
+                    ret = _master.read_coils(req.addr, req.reg, 1)
             if(req.func==1): # read input discrete
                 ret = _master.read_discrete_inputs(req.addr,req.reg,1)
             if(req.func==4): # write reg
-                _master.write_single_register(req.addr,req.reg,req.val,signed=False)
+                if req.val is not None:
+                    _master.write_single_register(req.addr,req.reg,req.val,signed=False)
+                else:
+                    ret = _master.read_holding_registers(req.addr,req.reg,1,signed=False)
             if(req.func==3): # read reg
                 ret = _master.read_input_registers(req.addr,req.reg,1,signed=False)
             if ret is not None:
@@ -47,8 +53,8 @@ def __thread_mbus():
 start_new_thread(__thread_mbus, ())
 
 class FQConv():
-    FQ_REG    = 768      # адрес регистра где частота лежит. Для Mege Drive = 2, от 0 до 1500
-    FAULT_REG = 257      # адрес регистра где состояние ЧП лежит. Для Mege Drive = ?
+    FQ_REG    = 2 #768      # адрес регистра где частота лежит. Для Mege Drive = 2, от 0 до 1500
+    FAULT_REG = 4 #257      # адрес регистра где состояние ЧП лежит. Для Mege Drive = ?
 
     def __init__(self, addr: int=1) -> None:
         self.addr = addr
@@ -79,7 +85,7 @@ class FQConv():
         self._lock.acquire()
         v = self._fault
         self._lock.release()
-        return v!=0
+        return v>10000
     
     def set_fq(self,fq: int):
         self.fq = fq
@@ -89,7 +95,7 @@ class FQConv():
         self._lock.acquire()
         if val is not None:
             self._timeout = 10          #какое-то время не читать
-            if reg==FQConv.FAULT_REG and fn==3:
+            if reg==FQConv.FAULT_REG and fn==4:
                 self._fault = val
         else:
             self._dflags = 0x0001       #установим флаг, тк. с ЧП что то не то
@@ -104,7 +110,7 @@ class FQConv():
             self.pause = 5
             _lock.acquire()
             if len(_queue)<MAX_QUEUE_SIZE:
-                _queue.append( REQUEST(self.addr,3,FQConv.FAULT_REG,None,callback=self.callback))
+                _queue.append( REQUEST(self.addr,4,FQConv.FAULT_REG,None,callback=self.callback))
             _lock.release()
         elif timeout>0:
             self._lock.acquire()

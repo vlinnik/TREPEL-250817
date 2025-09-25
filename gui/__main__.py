@@ -29,6 +29,7 @@ def main():
     navbar.append(Zone_1)
     navbar.append(Zone_2)
     navbar.append(Zone_3)
+    navbar.tools(app.window('ui/info.ui'))
     navbar.instance.show( )
     navbar.instance.setWindowTitle('АСУ ПЕРЕРАБОТКИ И ФАСОВКИ ТРЕПЕЛА 250817 (c) 2025')
     # или 

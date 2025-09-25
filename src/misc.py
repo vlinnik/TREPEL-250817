@@ -13,15 +13,17 @@ class Factory(POU):
     scanTime = POU.var(0)
     moto = POU.var(int(0),persistent=True)
     powered = POU.var(int(0),persistent=True)
+    hw_emergency = POU.input(False,hidden=True)
 
-    def __init__(self,id:str = None,parent:POU=None) -> None:
+    def __init__(self,emergency: bool,*_,id:str = None,parent:POU=None) -> None:
         super().__init__( id,parent )
+        self.hw_emergency = emergency
         self.manual = True
         self.emergency = False
         self.powerfail = True
         self.powerack = False
         self.f_manual = TRIG(clk = lambda: self.manual)
-        self.f_emergency = TRIG(clk = lambda: self.emergency )
+        self.f_emergency = TRIG(clk = lambda: self.emergency or self.hw_emergency)
         self.f_powerack = TON(clk = lambda: self.powerack,pt=2000)
         self.hour = TON(pt=Factory.HOUR)
         self.__sec= BLINK(enable=True)
@@ -39,9 +41,9 @@ class Factory(POU):
             if self.f_manual( ):
                 for e in self.on_mode:
                     e( self.manual )
-            if self.f_emergency( ):
+            if self.f_emergency( ) or self.f_emergency.clk:
                 for e in self.on_emergency:
-                    e( self.emergency )
+                    e( self.f_emergency.clk )
                 
             if self.powerfail:
                 self.powerfail = False

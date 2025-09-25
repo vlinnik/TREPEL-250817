@@ -78,6 +78,10 @@ class Gear(SFC):
     def _end(self):
         self.log('working working mode')
         
+    def emergency(self,on: bool):
+        self.on = False
+        self.off = on
+        
     def main(self):
         self.state = Gear.IDLE
         self.rdy = False
@@ -122,7 +126,7 @@ class GearROT(Gear):
     def __init__(self, fault: bool = None, q: bool = None, lock: bool = None, rot: bool = None, depends: Gear = None, id: str = None, parent: POU = None) -> None:
         super().__init__(fault=fault, q=q, lock=lock, depends=depends, id=id, parent=parent)
         self.rot = rot
-        self._rotating = TOF(clk = TRIG(clk = lambda: self.rot), q = self.monitor)
+        self._rotating = TOF(clk = TRIG(clk = lambda: self.rot),pt=5000, q = self.monitor)
         self.subtasks += (self._rotating, )
 
     def monitor(self, rot: bool):
@@ -160,12 +164,22 @@ class Feeder(GearFQ):
             self.log('ошибка: нет вращения')
             
         self.fail = self.fault and self.q
-
+    
+    def update_timeout(self):
+        #время ожидания изменения сигнала на входе rot зависит от скорости работы. Экспериментально подобрано
+        if self.q:
+            if self.fq<500:
+                self._rotating.pt = 35000
+            elif self.fq<1000:
+                self._rotating.pt = 25000
+            else:
+                self._rotating.pt = 10000
+        
     def __init__(self, rot: bool|None = None,fq: int|None = None,  fault: bool|None = None, q: bool|None = None, lock: bool|None = None, depends: Gear|None=None, id: str|None = None, parent: POU|None = None) -> None:
         super().__init__(fault=fault, q=q, lock=lock, depends=depends, fq=fq, id=id, parent=parent)
         self.rot = rot
         self._rotating = TOF(clk = TRIG(clk = lambda: self.rot), q = self.monitor)
-        self.subtasks += (self._rotating, )
+        self.subtasks += (self._rotating,self.update_timeout )
         
     def _allowed(self) -> bool:
         self.fail = self.fault and self.q
