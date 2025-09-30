@@ -34,7 +34,7 @@
         "flags": 0,
         "iface": 0,
         "channel": 1,
-        "rate": 12
+        "rate": 6
     },
     "layout": [
         "5c:01:3b:33:de:60",
